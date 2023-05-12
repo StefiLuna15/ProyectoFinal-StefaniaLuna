@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*--------------------INDEX--------------------*/
+
+/*-------HEADER-------*/
+
+.navbar {
+    list-style-type: none;
+    text-align: right;
+}
+
+nav {
+    background-color: rgb(199, 183, 183);
+    padding: 1.5rem;
+}
+
+.navbar li {
+    display: inline-block;
+    background-color:rgb(216, 83, 143);
+    border-radius: .3rem;
+    margin: 0 .8rem;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+    margin: 0 .5rem;
+}
+
+.logo img {
+    width: 8rem;
+}
+
+/*-------MAIN-------*/
+
+section div{
+    position: relative;
+    display: inline-block;
+    padding: .3rem;
+    margin-top: 2.5rem;
+    margin-left: .8rem;
+}
+
+section img {
+    width: 21rem;
+}
+
+h2 {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    padding: 2rem;
+}
+
+.combo {
+    background-color: rgb(245, 224, 224);
+    padding: 1rem;
+    margin: 2rem;
+}
+
+.combo img {
+    width: 18rem;
+    padding: 1.5rem;
+}
+
+/*--------------------PRODUCTOS--------------------*/
+
+.product {
+    text-align: center;
+    margin-top: 0;
+}
+
+.product__text {
+    margin: 0 .1rem;
+}
+
+.product__text p {
+    color:rgb(216, 83, 143);
+    padding: .3rem;
+}
+
+.product img {
+    width: 18rem;
+    padding: 1.5rem;
+}
+
+.product__text a {
+    background-color:rgb(216, 83, 143);
+    border-radius: .3rem;
+    margin-top: .3rem;
+}
+
+/*--------------------FAQ--------------------*/
+
+.title {
+    text-align: center;
+    padding: 2rem;
+}
+
+.faq {
+    padding: 3rem;
+    background-color: rgb(245, 224, 224);
+    margin: 3rem;
+}
+
+.faq div {
+    position: relative;
+    display: block;
+    margin: 1.5rem;
+    margin-left: 10rem;
+    color:rgb(216, 83, 143);
+    font-size: 1.5rem;
+}
+
+.faq img {
+    width: 18rem;
+    margin-left: 51rem;
+}
+
+/*--------------------EMPRESA--------------------*/
+
+.text {
+    margin: 2.3rem;
+    text-align: center;
+}
+
+.presentation {
+    padding: 2rem;
+    margin: 5rem;
+    background-color: rgb(245, 224, 224);
+    color:rgb(216, 83, 143);
+    font-size: 1.5rem;
+}
+
+.img1 {
+    width: 10rem;
+    margin-top: 2rem;
+    margin-left: 67.5rem;
+}
+
+.img2 {
+    width: 10rem;
+    margin-top: 2rem;
+    margin-right: 40rem;
+}
+
+.img3 {
+    width: 10rem;
+    margin-top: 2rem;
+    margin-left: 67.5rem;
+}
+
+.img4 {
+    width: 10rem;
+    margin-top: 2rem;
+    margin-right: 40rem;
+}
+
+/*--------------------CONTACTO--------------------*/
+
+.contact {
+    margin-top: 2rem;
+}
+
+input {
+    display: block;
+    padding: .3rem;
+    width: 70%;
+    align-items: center;
+}
+
+form {
+    border: .4rem;
+    display: block;
+    justify-content: center;
+    margin: 6rem;
+    margin-left: 20rem;  
+    color:rgb(216, 83, 143);
+}
+
+.submit {
+    background-color:rgb(216, 83, 143);
+    width: 8rem;
+    margin-top: 2rem;
+    margin-left: 38.6rem;
+    border-radius: .3rem;
+    color: aliceblue;
+}
+
+.message input {
+    height: 5rem;
+}
+
+/*--------------------FOOTER--------------------*/
+
+footer {
+    background-color: rgb(199, 183, 183);
+    width: 100%;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer div {
+    position: relative;
+    display: inline-block;
+    padding: 2.5rem;
+    margin: 0 6rem;
+}
+
+
+
