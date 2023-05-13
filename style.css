@@ -104,9 +104,8 @@ h1 {
 
 /*--------------------FAQ--------------------*/
 
-.title {
-    text-align: center;
-    padding: 2rem;
+.text {
+    margin: 3rem;
 }
 
 .grid__img {
@@ -130,7 +129,7 @@ h1 {
 
 .grid {
     background-color: rgb(245, 224, 224);
-    padding: 3rem;
+    padding: 2rem;
     margin: 3rem;
     color: #FF7B9C;
     font-size: 1.5rem;
@@ -164,27 +163,13 @@ h1 {
     grid-area: img;
 }
 
-
-
-/* .faq {
-    padding: 3rem;
-    background-color: rgb(245, 224, 224);
-    margin: 3rem;
+.grid h3, p {
+    padding: .5rem;
 }
 
-.faq div {
-    position: relative;
-    display: block;
-    margin: 1.5rem;
-    margin-left: 10rem;
-    color:rgb(216, 83, 143);
-    font-size: 1.5rem;
+.grid p {
+    margin-bottom: 2rem;
 }
-
-.faq img {
-    width: 18rem;
-    margin-left: 51rem;
-} */
 
 /*--------------------EMPRESA--------------------*/
 
