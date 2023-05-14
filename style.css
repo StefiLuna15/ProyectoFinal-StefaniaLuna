@@ -11,7 +11,7 @@ body {
 
 /*-------HEADER-------*/
 
-.navbar {
+.navbarUL {
     list-style-type: none;
     display: flex;
     justify-content: right;
@@ -22,7 +22,7 @@ nav {
     padding: 1.5rem;
 }
 
-.navbar li {
+.navbarUL li {
     background-color: #FF7B9C;
     border-radius: .3rem;
     margin: 0 .8rem;
@@ -43,37 +43,55 @@ a {
 
 /*-------MAIN-------*/
 
-section div{
-    position: relative;
-    display: inline-block;
+.combo {
     padding: .3rem;
-    margin-top: 2.5rem;
-    margin-left: .8rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 section img {
     width: 21rem;
 }
 
-h2 {
+.texto {
+    margin: 2.3rem;
     text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
-h1 {
+.carrusel {
     text-align: center;
-    padding: 2rem;
+    background-color: rgb(245, 224, 224);
+    max-width: 1200px;
 }
+
+.carousel-control-prev{
+    left: 20px;
+}
+
+.carru1{
+    width: 30rem;
+    height: 30rem;
+}
+
+h5 {
+    color: #FF7B9C;
+    font-size: 2rem;
+}
+
 
 .combo {
     background-color: rgb(245, 224, 224);
-    padding: 1rem;
+    padding: 2rem;
     margin: 2rem;
 }
 
 .combo img {
-    width: 18rem;
+    width: 20rem;
     padding: 1.5rem;
 }
+
 
 /*--------------------PRODUCTOS--------------------*/
 
@@ -195,7 +213,29 @@ h1 {
 
 /*--------------------CONTACTO--------------------*/
 
-.contact {
+.formularioFL {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(245, 224, 224);
+    margin: 7rem;
+    padding: 3rem;
+    
+}
+
+.formularioFL__contacto {
+    margin: 1.5rem;
+    width: 25rem;
+}
+
+.enviar {
+    background-color:rgb(216, 83, 143);
+    width: 8rem;
+    border-radius: .3rem;
+    margin: 2rem;
+}
+
+/* .contact {
     margin-top: 2rem;
 }
 
@@ -226,7 +266,7 @@ form {
 
 .message input {
     height: 5rem;
-}
+} */
 
 /*--------------------FOOTER--------------------*/
 
@@ -235,11 +275,17 @@ footer {
     display: flex;
     justify-content: space-around;
     padding: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
-.footer ul {
-    list-style: none;
+footer ul {
+    list-style-type: none;
 }
+
+
+
+
 
 
 
