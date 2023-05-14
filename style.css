@@ -11,14 +11,21 @@ body {
 
 /*-------HEADER-------*/
 
+header {
+    background-color: rgb(199, 183, 183);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
 .navbarUL {
     list-style-type: none;
     display: flex;
-    justify-content: right;
+    margin-top: 5rem;
 }
 
 nav {
-    background-color: rgb(199, 183, 183);
     padding: 1.5rem;
 }
 
@@ -38,7 +45,7 @@ a {
 }
 
 .logo img {
-    width: 8rem;
+    width: 10rem;
 }
 
 /*-------MAIN-------*/
@@ -66,11 +73,11 @@ section img {
     max-width: 1200px;
 }
 
-.carousel-control-prev{
+.carousel-control-prev {
     left: 20px;
 }
 
-.carru1{
+.carru1 {
     width: 30rem;
     height: 30rem;
 }
@@ -105,7 +112,7 @@ h5 {
 }
 
 .product__text p {
-    color:rgb(216, 83, 143);
+    color: rgb(216, 83, 143);
     padding: .3rem;
 }
 
@@ -115,7 +122,7 @@ h5 {
 }
 
 .product__text a {
-    background-color:rgb(216, 83, 143);
+    background-color: rgb(216, 83, 143);
     border-radius: .3rem;
     margin-top: .3rem;
 }
@@ -134,14 +141,14 @@ h5 {
     display: grid;
     grid-template-columns: 70% 30%;
     grid-template-rows: min-content min-content min-content min-content min-content min-content min-content;
-    grid-template-areas: 
-    "subtitle1  ..."
-    "paragraph1 ..."
-    "subtitle2  ..."
-    "paragraph2 ..."
-    "subtitle3  ..."
-    "paragraph3 img"
-    "...        img"
+    grid-template-areas:
+        "subtitle1  ..."
+        "paragraph1 ..."
+        "subtitle2  ..."
+        "paragraph2 ..."
+        "subtitle3  ..."
+        "paragraph3 img"
+        "...        img"
     ;
 }
 
@@ -181,13 +188,15 @@ h5 {
     grid-area: img;
 }
 
-.grid h3, p {
+.grid h3,
+p {
     padding: .5rem;
 }
 
 .grid p {
     margin-bottom: 2rem;
 }
+
 
 /*--------------------EMPRESA--------------------*/
 
@@ -211,6 +220,8 @@ h5 {
     justify-content: space-between;
 }
 
+
+
 /*--------------------CONTACTO--------------------*/
 
 .formularioFL {
@@ -220,7 +231,7 @@ h5 {
     background-color: rgb(245, 224, 224);
     margin: 7rem;
     padding: 3rem;
-    
+
 }
 
 .formularioFL__contacto {
@@ -229,7 +240,7 @@ h5 {
 }
 
 .enviar {
-    background-color:rgb(216, 83, 143);
+    background-color: rgb(216, 83, 143);
     width: 8rem;
     border-radius: .3rem;
     margin: 2rem;
@@ -283,13 +294,54 @@ footer ul {
     list-style-type: none;
 }
 
+/*--------------------RESPONSIVE--------------------*/
 
+/*-------FAQ-------*/
 
+@media screen and (max-width: 480px) {
+    footer {
+        flex-direction: column;
+    }
 
+    footer div {
+        margin: .5rem;
+    }
 
+    .navbarUL {
+        flex-direction: column;
+    }
 
+    .logo img {
+        width: 2rem;
+    }
 
+    .navbarUL li {
+        border-radius: .3rem;
+        margin: .2rem;
+        padding: .1rem;
+        width: 6rem;
+    }
+    
 
+    .grid .grid__img {
+        width: 10rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .grid {
+        grid-template-columns: 100%;
+        grid-template-rows: min-content min-content min-content min-content min-content min-content min-content;
+        grid-template-areas:
+            "subtitle1"
+            "paragraph1"
+            "subtitle2"
+            "paragraph2"
+            "subtitle3"
+            "paragraph3"
+            "img"
+        ;
+    }
 
-
+}

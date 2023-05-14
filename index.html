@@ -16,8 +16,8 @@
 
 <body>
     <header>
+        <a class="logo" href="./assets/logoFinal.png"><img src="./assets/logoFinal.png" alt="Logo de Fontana"></a>
         <nav>
-            <a class="logo" href="./assets/logoFinal.png"><img src="./assets/logoFinal.png" alt="Logo de Fontana"></a>
             <ul class="navbarUL">
                 <li><a href="./index.html">Inicio</a></li>
                 <li><a href="./pages/productos.html">Productos</a></li>
@@ -29,8 +29,8 @@
     </header>
     <main>
         <h2 class="texto">Mates y regalos</h2>
-        <section>
-            <div class="container carrusel">
+        <section class="container">
+            <div class="row carrusel">
                 <div id="carouselExampleCaptions" class="carousel slide">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
@@ -83,12 +83,14 @@
         </section>
 
         <section>
-            <h2 class="texto">Combos Destacados</h2>
-            <div class="combo">
-                <img src="./assets/ComboRosa.jpg" alt="">
-                <img src="./assets/ComboNaranja.jpg" alt="">
-                <img src="./assets/ComboLila.jpg" alt="">
-                <img src="./assets/ComboVerde.jpg" alt="">
+            <div class="container-md">
+                <h2 class="texto">Combos Destacados</h2>
+                <div class="combo container-md">
+                    <img src="./assets/ComboRosa.jpg" alt="">
+                    <img src="./assets/ComboNaranja.jpg" alt="">
+                    <img src="./assets/ComboLila.jpg" alt="">
+                    <img src="./assets/ComboVerde.jpg" alt="">
+                </div>
             </div>
         </section>
     </main>
@@ -119,4 +121,5 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
