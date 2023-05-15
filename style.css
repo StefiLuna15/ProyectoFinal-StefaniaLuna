@@ -36,6 +36,9 @@ nav {
     padding: .3rem;
 }
 
+.navbarUL li:hover {
+    background-color: rgb(200, 5, 234);
+}
 
 a {
     text-decoration: none;
@@ -49,12 +52,6 @@ a {
 }
 
 /*-------MAIN-------*/
-
-.combo {
-    padding: .3rem;
-    display: flex;
-    justify-content: space-between;
-}
 
 section img {
     width: 21rem;
@@ -87,8 +84,9 @@ h5 {
     font-size: 2rem;
 }
 
-
 .combo {
+    display: flex;
+    justify-content: space-between;
     background-color: rgb(245, 224, 224);
     padding: 2rem;
     margin: 2rem;
@@ -128,6 +126,11 @@ h5 {
 }
 
 /*--------------------FAQ--------------------*/
+
+#menu,
+#menu-check {
+    display: none;
+}
 
 .text {
     margin: 3rem;
@@ -229,55 +232,28 @@ p {
     flex-direction: column;
     align-items: center;
     background-color: rgb(245, 224, 224);
-    margin: 7rem;
+    margin: 3rem;
     padding: 3rem;
-
 }
 
 .formularioFL__contacto {
     margin: 1.5rem;
     width: 25rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .enviar {
-    background-color: rgb(216, 83, 143);
+    background-color: #FF7B9C;
     width: 8rem;
     border-radius: .3rem;
     margin: 2rem;
 }
 
-/* .contact {
-    margin-top: 2rem;
+.enviar:hover {
+    background-color: rgb(200, 5, 234);
 }
 
-input {
-    display: block;
-    padding: .3rem;
-    width: 70%;
-    align-items: center;
-}
-
-form {
-    border: .4rem;
-    display: block;
-    justify-content: center;
-    margin: 6rem;
-    margin-left: 20rem;  
-    color:rgb(216, 83, 143);
-}
-
-.submit {
-    background-color:rgb(216, 83, 143);
-    width: 8rem;
-    margin-top: 2rem;
-    margin-left: 38.6rem;
-    border-radius: .3rem;
-    color: aliceblue;
-}
-
-.message input {
-    height: 5rem;
-} */
 
 /*--------------------FOOTER--------------------*/
 
@@ -299,35 +275,43 @@ footer ul {
 /*-------FAQ-------*/
 
 @media screen and (max-width: 480px) {
-    footer {
-        flex-direction: column;
-    }
 
-    footer div {
-        margin: .5rem;
-    }
-
-    .navbarUL {
-        flex-direction: column;
+    nav {
+        display: none;
     }
 
     .logo img {
-        width: 2rem;
+        width: 4rem;
     }
 
-    .navbarUL li {
-        border-radius: .3rem;
-        margin: .2rem;
-        padding: .1rem;
-        width: 6rem;
+    #menu-check:not(:checked)~nav {
+        display: none;
     }
-    
+
+    #menu {
+        display: block;
+        color: aliceblue;
+        background-color: #FF7B9C;
+        font-size: 2.5rem;
+        border-radius: .3rem;
+        position: absolute;
+        right: 0.5em;
+        top: 0.5em;
+    }
+
+    #menu-cerrar {
+        display: none;
+    }
 
     .grid .grid__img {
-        width: 10rem;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .grid h3, p {
+        font-size: 1rem;
     }
 
     .grid {
@@ -344,4 +328,34 @@ footer ul {
         ;
     }
 
+    footer {
+        flex-direction: column;
+    }
+    
+    footer div {
+        margin: .5rem;
+    }
+    
+}
+
+/*-------EMPRESA-------*/
+
+@media screen and (max-width: 480px) {
+    
+    .blog {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .presentacion {
+        width: 100%;
+    }
+    
+    .blog img {
+        width: 100%;
+    }
+    
+    .blog p {
+        width: 100%;
+    }
 }
