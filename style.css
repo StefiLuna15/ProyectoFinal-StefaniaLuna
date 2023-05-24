@@ -100,7 +100,23 @@ h5 {
 
 /*--------------------PRODUCTOS--------------------*/
 
-.product {
+.descripcion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FF7B9C;
+}
+
+.catalogo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.producto {
+    
+}
+
+/* .product {
     text-align: center;
     margin-top: 0;
 }
@@ -112,7 +128,7 @@ h5 {
 .product__text p {
     color: rgb(216, 83, 143);
     padding: .3rem;
-}
+} */
 
 .product img {
     width: 18rem;
