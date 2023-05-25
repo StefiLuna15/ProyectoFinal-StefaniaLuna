@@ -105,40 +105,36 @@ h5 {
     flex-direction: column;
     align-items: center;
     color: #FF7B9C;
+    margin: 2rem;
 }
 
 .catalogo {
     display: flex;
-    justify-content: space-between;
+    text-align: center;
+    margin: 2rem;
+}
+
+.catalogo img {
+    width: 100%;
+}
+
+.catalogo button {
+    background-color: #FF7B9C;
+    width: 8rem;
+    border-radius: .3rem;
+    margin: 2rem;
+}
+
+.catalogo button:hover {
+    background-color: rgb(200, 5, 234);
 }
 
 .producto {
-    
-}
-
-/* .product {
-    text-align: center;
-    margin-top: 0;
-}
-
-.product__text {
-    margin: 0 .1rem;
-}
-
-.product__text p {
-    color: rgb(216, 83, 143);
-    padding: .3rem;
-} */
-
-.product img {
-    width: 18rem;
-    padding: 1.5rem;
-}
-
-.product__text a {
-    background-color: rgb(216, 83, 143);
-    border-radius: .3rem;
-    margin-top: .3rem;
+    background-color: rgb(245, 224, 224);
+    width: 30rem;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: .5rem;
 }
 
 /*--------------------FAQ--------------------*/
