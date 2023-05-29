@@ -1,0 +1,19 @@
+.text {
+    margin: 2.3rem;
+    text-align: center;
+}
+
+.blog {
+    display: flex;
+    margin: 3rem;
+    padding: 2rem;
+    background-color: rgb(245, 224, 224);
+    color: #FF7B9C;
+    font-size: 1.5rem;
+}
+
+.left {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}

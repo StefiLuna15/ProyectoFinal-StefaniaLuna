@@ -1,0 +1,72 @@
+#menu,
+#menu-check {
+    display: none;
+}
+
+.text {
+    margin: 3rem;
+}
+
+.grid__img {
+    width: 23rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: min-content min-content min-content min-content min-content min-content min-content;
+    grid-template-areas:
+        "subtitle1  ..."
+        "paragraph1 ..."
+        "subtitle2  ..."
+        "paragraph2 ..."
+        "subtitle3  ..."
+        "paragraph3 img"
+        "...        img"
+    ;
+}
+
+.grid {
+    background-color: rgb(245, 224, 224);
+    padding: 2rem;
+    margin: 3rem;
+    color: #FF7B9C;
+    font-size: 1.5rem;
+}
+
+.grid .grid__subtitle1 {
+    grid-area: subtitle1;
+}
+
+.grid .grid__paragraph1 {
+    grid-area: paragraph1;
+}
+
+.grid .grid__subtitle2 {
+    grid-area: subtitle2;
+}
+
+.grid .grid__paragraph2 {
+    grid-area: paragraph2;
+}
+
+.grid .grid__subtitle3 {
+    grid-area: subtitle3;
+}
+
+.grid .grid__paragraph3 {
+    grid-area: paragraph3;
+}
+
+.grid .grid__img {
+    grid-area: img;
+}
+
+.grid h3,
+p {
+    padding: .5rem;
+}
+
+.grid p {
+    margin-bottom: 2rem;
+}

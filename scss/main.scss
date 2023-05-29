@@ -1,0 +1,384 @@
+@import "_variables.scss";
+
+/*-------RESEAT-------*/
+@import "_reseat.scss";
+// * {
+//     margin: 0;
+//     padding: 0;
+// }
+
+/*-------BODY-------*/
+@import "_body.scss";
+// body {
+//     font-family: Arial, Helvetica, sans-serif;
+// }
+
+/*--------------------INDEX--------------------*/
+
+/*-------HEADER-------*/
+@import "_header.scss";
+
+// header {
+//     background-color: rgb(199, 183, 183);
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     padding: 1rem;
+// }
+
+// .navbarUL {
+//     list-style-type: none;
+//     display: flex;
+//     margin-top: 5rem;
+// }
+
+// nav {
+//     padding: 1.5rem;
+// }
+
+// .navbarUL li {
+//     background-color: #FF7B9C;
+//     border-radius: .3rem;
+//     margin: 0 .8rem;
+//     padding: .3rem;
+// }
+
+// .navbarUL li:hover {
+//     background-color: rgb(200, 5, 234);
+// }
+
+// a {
+//     text-decoration: none;
+//     color: aliceblue;
+//     margin: 0 .5rem;
+//     padding: .5rem;
+// }
+
+// .logo img {
+//     width: 10rem;
+// }
+
+/*-------MAIN-------*/
+@import "_index.scss";
+
+// section img {
+//     width: 21rem;
+// }
+
+// .texto {
+//     margin: 2.3rem;
+//     text-align: center;
+//     font-weight: bold;
+//     font-size: 1.5rem;
+// }
+
+// .carrusel {
+//     text-align: center;
+//     background-color: rgb(245, 224, 224);
+//     max-width: 1200px;
+// }
+
+// .carousel-control-prev {
+//     left: 20px;
+// }
+
+// .carru1 {
+//     width: 30rem;
+//     height: 30rem;
+// }
+
+// h5 {
+//     color: #FF7B9C;
+//     font-size: 2rem;
+// }
+
+// .combo {
+//     display: flex;
+//     justify-content: space-between;
+//     background-color: rgb(245, 224, 224);
+//     padding: 2rem;
+//     margin: 2rem;
+// }
+
+// .combo img {
+//     width: 20rem;
+//     padding: 1.5rem;
+// }
+
+
+/*--------------------PRODUCTOS--------------------*/
+@import "_productos.scss";
+
+// .descripcion {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     color: #FF7B9C;
+//     margin: 2rem;
+// }
+
+// .catalogo {
+//     display: flex;
+//     text-align: center;
+//     margin: 2rem;
+// }
+
+// .catalogo img {
+//     width: 100%;
+// }
+
+// .catalogo button {
+//     background-color: #FF7B9C;
+//     width: 8rem;
+//     border-radius: .3rem;
+//     margin: 2rem;
+// }
+
+// .catalogo button:hover {
+//     background-color: rgb(200, 5, 234);
+// }
+
+// .producto {
+//     background-color: rgb(245, 224, 224);
+//     width: 30rem;
+//     padding: 1rem;
+//     margin: 1rem;
+//     border-radius: .5rem;
+// }
+
+/*--------------------FAQ--------------------*/
+@import "_FAQ.scss";
+
+// #menu,
+// #menu-check {
+//     display: none;
+// }
+
+// .text {
+//     margin: 3rem;
+// }
+
+// .grid__img {
+//     width: 23rem;
+// }
+
+// .grid {
+//     display: grid;
+//     grid-template-columns: 70% 30%;
+//     grid-template-rows: min-content min-content min-content min-content min-content min-content min-content;
+//     grid-template-areas:
+//         "subtitle1  ..."
+//         "paragraph1 ..."
+//         "subtitle2  ..."
+//         "paragraph2 ..."
+//         "subtitle3  ..."
+//         "paragraph3 img"
+//         "...        img"
+//     ;
+// }
+
+// .grid {
+//     background-color: rgb(245, 224, 224);
+//     padding: 2rem;
+//     margin: 3rem;
+//     color: #FF7B9C;
+//     font-size: 1.5rem;
+// }
+
+// .grid .grid__subtitle1 {
+//     grid-area: subtitle1;
+// }
+
+// .grid .grid__paragraph1 {
+//     grid-area: paragraph1;
+// }
+
+// .grid .grid__subtitle2 {
+//     grid-area: subtitle2;
+// }
+
+// .grid .grid__paragraph2 {
+//     grid-area: paragraph2;
+// }
+
+// .grid .grid__subtitle3 {
+//     grid-area: subtitle3;
+// }
+
+// .grid .grid__paragraph3 {
+//     grid-area: paragraph3;
+// }
+
+// .grid .grid__img {
+//     grid-area: img;
+// }
+
+// .grid h3,
+// p {
+//     padding: .5rem;
+// }
+
+// .grid p {
+//     margin-bottom: 2rem;
+// }
+
+
+/*--------------------EMPRESA--------------------*/
+@import "_empresa.scss";
+
+// .text {
+//     margin: 2.3rem;
+//     text-align: center;
+// }
+
+// .blog {
+//     display: flex;
+//     margin: 3rem;
+//     padding: 2rem;
+//     background-color: rgb(245, 224, 224);
+//     color: #FF7B9C;
+//     font-size: 1.5rem;
+// }
+
+// .left {
+//     display: flex;
+//     flex-direction: row-reverse;
+//     justify-content: space-between;
+// }
+
+
+
+/*--------------------CONTACTO--------------------*/
+
+.formularioFL {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(245, 224, 224);
+    margin: 3rem;
+    padding: 3rem;
+}
+
+.formularioFL__contacto {
+    margin: 1.5rem;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.enviar {
+    background-color: #FF7B9C;
+    width: 8rem;
+    border-radius: .3rem;
+    margin: 2rem;
+}
+
+.enviar:hover {
+    background-color: rgb(200, 5, 234);
+}
+
+
+/*--------------------FOOTER--------------------*/
+
+footer {
+    background-color: rgb(199, 183, 183);
+    display: flex;
+    justify-content: space-around;
+    padding: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+/*--------------------RESPONSIVE--------------------*/
+
+/*-------FAQ-------*/
+
+@media screen and (max-width: 480px) {
+
+    nav {
+        display: none;
+    }
+
+    .logo img {
+        width: 4rem;
+    }
+
+    #menu-check:not(:checked)~nav {
+        display: none;
+    }
+
+    #menu {
+        display: block;
+        color: aliceblue;
+        background-color: #FF7B9C;
+        font-size: 2.5rem;
+        border-radius: .3rem;
+        position: absolute;
+        right: 0.5em;
+        top: 0.5em;
+    }
+
+    #menu-cerrar {
+        display: none;
+    }
+
+    .grid .grid__img {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid h3, p {
+        font-size: 1rem;
+    }
+
+    .grid {
+        grid-template-columns: 100%;
+        grid-template-rows: min-content min-content min-content min-content min-content min-content min-content;
+        grid-template-areas:
+            "subtitle1"
+            "paragraph1"
+            "subtitle2"
+            "paragraph2"
+            "subtitle3"
+            "paragraph3"
+            "img"
+        ;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+    
+    footer div {
+        margin: .5rem;
+    }
+    
+}
+
+/*-------EMPRESA-------*/
+
+@media screen and (max-width: 480px) {
+    
+    .blog {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .presentacion {
+        width: 100%;
+    }
+    
+    .blog img {
+        width: 100%;
+    }
+    
+    .blog p {
+        width: 100%;
+    }
+}

@@ -1,0 +1,48 @@
+section img {
+    width: 21rem;
+}
+
+.texto {
+    margin: 2.3rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.carrusel {
+    text-align: center;
+    background-color: rgb(245, 224, 224);
+    max-width: 1200px;
+}
+
+.carousel-control-prev {
+    left: 20px;
+}
+
+.carru1 {
+    width: 30rem;
+    height: 30rem;
+}
+
+h5 {
+    color: $color-rosa;
+    font-size: 2rem;
+}
+
+.combo {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(245, 224, 224);
+    padding: 2rem;
+    margin: 2rem;
+
+    img {
+        width: 20rem;
+        padding: 1.5rem;
+    }
+}
+
+// .combo img {
+//     width: 20rem;
+//     padding: 1.5rem;
+// }
