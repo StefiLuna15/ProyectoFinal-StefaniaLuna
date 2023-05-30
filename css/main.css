@@ -1,7 +1,10 @@
+/*-------VARIABLES-------*/
 /*-------RESEAT-------*/
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /*-------BODY-------*/
@@ -9,7 +12,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/*--------------------INDEX--------------------*/
 /*-------HEADER-------*/
 header {
   background-color: rgb(199, 183, 183);
@@ -55,7 +57,7 @@ header .logo img nav {
   background-color: rgb(200, 5, 234);
 }
 
-/*-------MAIN-------*/
+/*-------INDEX-------*/
 section img {
   width: 21rem;
 }
@@ -103,7 +105,7 @@ h5 {
   padding: 1.5rem;
 }
 
-/*--------------------PRODUCTOS--------------------*/
+/*-------PRODUCTOS-------*/
 .descripcion {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -124,7 +126,10 @@ h5 {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  margin: 2rem;
+  margin: 1rem;
+}
+.catalogo img {
+  width: 100%;
 }
 
 .catalogo button:hover {
@@ -148,12 +153,7 @@ h5 {
   width: 100%;
 }
 
-/*--------------------FAQ--------------------*/
-#menu,
-#menu-check {
-  display: none;
-}
-
+/*-------FAQ-------*/
 .text {
   margin: 3rem;
 }
@@ -215,7 +215,7 @@ p {
   margin-bottom: 2rem;
 }
 
-/*--------------------EMPRESA--------------------*/
+/*-------EMPRESA-------*/
 .text {
   margin: 2.3rem;
   text-align: center;
@@ -245,7 +245,7 @@ p {
           justify-content: space-between;
 }
 
-/*--------------------CONTACTO--------------------*/
+/*-------CONTACTO-------*/
 .formularioFL {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -261,8 +261,7 @@ p {
   margin: 3rem;
   padding: 3rem;
 }
-
-.formularioFL__contacto {
+.formularioFL .formularioFL__contacto {
   margin: 1.5rem;
   width: 25rem;
   display: -webkit-box;
@@ -285,7 +284,7 @@ p {
   background-color: rgb(200, 5, 234);
 }
 
-/*--------------------FOOTER--------------------*/
+/*-------FOOTER-------*/
 footer {
   background-color: rgb(199, 183, 183);
   display: -webkit-box;
@@ -297,36 +296,100 @@ footer {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
 }
-
 footer ul {
   list-style-type: none;
 }
 
-/*--------------------RESPONSIVE--------------------*/
-/*-------FAQ-------*/
+/*-------RESPONSIVE-------*/
+/*-------INDEX-------*/
+@media screen and (max-width: 1400px) {
+  .combo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 93%;
+  }
+  img {
+    width: 20rem;
+    padding: 1.5rem;
+  }
+  .carrusel {
+    text-align: center;
+    background-color: rgb(245, 224, 224);
+    max-width: 600px;
+  }
+}
 @media screen and (max-width: 480px) {
-  nav {
-    display: none;
+  .carrusel {
+    text-align: center;
+    background-color: rgb(245, 224, 224);
+    max-width: 500px;
   }
-  .logo img {
-    width: 4rem;
+  .combo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 87%;
   }
-  #menu-check:not(:checked) ~ nav {
-    display: none;
+  img {
+    width: 20rem;
+    padding: 1.5rem;
   }
-  #menu {
-    display: block;
-    color: aliceblue;
-    background-color: #FF7B9C;
-    font-size: 2.5rem;
-    border-radius: 0.3rem;
-    position: absolute;
-    right: 0.5em;
-    top: 0.5em;
+}
+/*-------PRODUCTOS-------*/
+@media screen and (max-width: 1029px) {
+  .catalogo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  #menu-cerrar {
-    display: none;
+  .producto {
+    width: 25rem;
   }
+}
+@media screen and (max-width: 480px) {
+  .catalogo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .producto {
+    width: 18rem;
+  }
+}
+/*-------FAQ-------*/
+@media screen and (max-width: 1300px) {
+  .grid .grid__img {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media screen and (max-width: 720px) {
   .grid .grid__img {
     width: 100%;
     display: -webkit-box;
@@ -349,17 +412,28 @@ footer ul {
     grid-template-rows: min-content min-content min-content min-content min-content min-content min-content;
     grid-template-areas: "subtitle1" "paragraph1" "subtitle2" "paragraph2" "subtitle3" "paragraph3" "img";
   }
-  footer {
+}
+/*-------EMPRESA-------*/
+@media screen and (max-width: 830px) {
+  .blog {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  footer div {
-    margin: 0.5rem;
+  .presentacion {
+    width: 100%;
+  }
+  .blog img {
+    width: 100%;
+  }
+  .blog p {
+    width: 100%;
   }
 }
-/*-------EMPRESA-------*/
 @media screen and (max-width: 480px) {
   .blog {
     -webkit-box-orient: vertical;
@@ -378,5 +452,84 @@ footer ul {
   }
   .blog p {
     width: 100%;
+  }
+}
+/*-------CONTACTO-------*/
+@media screen and (max-width: 510px) {
+  .formularioFL__contacto input, span {
+    width: 15rem;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .formularioFL__contacto {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+/*-------HEADER-------*/
+@media screen and (max-width: 830px) {
+  header {
+    padding: 0.5rem;
+  }
+  .logo img {
+    width: 3rem;
+  }
+  .navbarUL {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbarUL li {
+    margin: 0.1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  header {
+    padding: 0.5rem;
+  }
+  .logo img {
+    width: 1rem;
+  }
+  .navbarUL {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbarUL li {
+    margin: 0.1rem;
+  }
+}
+/*-------FOOTER-------*/
+@media screen and (max-width: 830px) {
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer div {
+    margin: 0.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer div {
+    margin: 0.5rem;
   }
 }

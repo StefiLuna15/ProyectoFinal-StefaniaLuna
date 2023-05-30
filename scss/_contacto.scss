@@ -1,0 +1,27 @@
+.formularioFL {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(245, 224, 224);
+    margin: 3rem;
+    padding: 3rem;
+
+    .formularioFL__contacto {
+        margin: 1.5rem;
+        width: 25rem;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+.enviar {
+    background-color: #FF7B9C;
+    width: 8rem;
+    border-radius: .3rem;
+    margin: 2rem;
+}
+
+.enviar:hover {
+    background-color: rgb(200, 5, 234);
+}

@@ -9,19 +9,13 @@
 .catalogo {
     display: flex;
     text-align: center;
-    margin: 2rem;
+    margin: 1rem;
+
+    img {
+        width: 100%;
+    }
 }
 
-// .catalogo img {
-//     width: 100%;
-// }
-
-// .catalogo button {
-//     background-color: #FF7B9C;
-//     width: 8rem;
-//     border-radius: .3rem;
-//     margin: 2rem;
-// }
 
 .catalogo button:hover {
     background-color: $color-hover;
