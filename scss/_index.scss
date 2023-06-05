@@ -13,6 +13,7 @@ section img {
     text-align: center;
     background-color: rgb(245, 224, 224);
     max-width: 1200px;
+    border-radius: $border-radius;
 }
 
 .carousel-control-prev {
@@ -35,10 +36,15 @@ h5 {
     background-color: rgb(245, 224, 224);
     padding: 2rem;
     margin: 2rem;
+    border-radius: $border-radius;
 
     img {
         width: 20rem;
         padding: 1.5rem;
+        transition: .5s;
+
+        &:hover {
+            transform: scale(1.3);
+        }
     }
 }
-

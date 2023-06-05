@@ -1,5 +1,5 @@
 header {
-    background-color: $color-fondo;
+    background-color: $color-header-footer;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -21,9 +21,14 @@ header {
 
     li {
         background-color: $color-rosa;
-        border-radius: .3rem;
+        border-radius: $border-radius;
         margin: 0 .8rem;
         padding: .3rem;
+        transition: .5s;
+
+        &:hover {
+            background-color: $color-hover;
+        }
 
         a {
             text-decoration: none;
@@ -32,9 +37,5 @@ header {
             padding: .5rem;
         }
     }
-}
-
-.navbarUL li:hover {
-    background-color: $color-hover;
 }
 

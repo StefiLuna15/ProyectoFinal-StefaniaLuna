@@ -16,23 +16,28 @@
     }
 }
 
-
-.catalogo button:hover {
-    background-color: $color-hover;
-}
-
 .producto {
     background-color: rgb(245, 224, 224);
     width: 30rem;
     padding: 1rem;
     margin: 1rem;
-    border-radius: .5rem;
+    border-radius: $border-radius;
+    transition: .5s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
 
     button {
-        background-color: #FF7B9C;
+        background-color: $color-rosa;
         width: 8rem;
-        border-radius: .3rem;
+        border-radius: $border-radius;
         margin: 2rem;
+        transition: .5s;
+
+        &:hover {
+            background-color: $color-hover;
+        }
 
         img {
             width: 100%;

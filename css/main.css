@@ -45,16 +45,17 @@ header .logo img nav {
   border-radius: 0.3rem;
   margin: 0 0.8rem;
   padding: 0.3rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.navbarUL li:hover {
+  background-color: rgb(200, 5, 234);
 }
 .navbarUL li a {
   text-decoration: none;
   color: aliceblue;
   margin: 0 0.5rem;
   padding: 0.5rem;
-}
-
-.navbarUL li:hover {
-  background-color: rgb(200, 5, 234);
 }
 
 /*-------INDEX-------*/
@@ -73,6 +74,7 @@ section img {
   text-align: center;
   background-color: rgb(245, 224, 224);
   max-width: 1200px;
+  border-radius: 0.3rem;
 }
 
 .carousel-control-prev {
@@ -99,10 +101,17 @@ h5 {
   background-color: rgb(245, 224, 224);
   padding: 2rem;
   margin: 2rem;
+  border-radius: 0.3rem;
 }
 .combo img {
   width: 20rem;
   padding: 1.5rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.combo img:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 /*-------PRODUCTOS-------*/
@@ -132,22 +141,29 @@ h5 {
   width: 100%;
 }
 
-.catalogo button:hover {
-  background-color: rgb(200, 5, 234);
-}
-
 .producto {
   background-color: rgb(245, 224, 224);
   width: 30rem;
   padding: 1rem;
   margin: 1rem;
-  border-radius: 0.5rem;
+  border-radius: 0.3rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.producto:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 .producto button {
   background-color: #FF7B9C;
   width: 8rem;
   border-radius: 0.3rem;
   margin: 2rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.producto button:hover {
+  background-color: rgb(200, 5, 234);
 }
 .producto button img {
   width: 100%;
@@ -176,6 +192,7 @@ h5 {
   margin: 3rem;
   color: #FF7B9C;
   font-size: 1.5rem;
+  border-radius: 0.3rem;
 }
 
 .grid .grid__subtitle1 {
@@ -230,6 +247,7 @@ p {
   background-color: rgb(245, 224, 224);
   color: #FF7B9C;
   font-size: 1.5rem;
+  border-radius: 0.3rem;
 }
 
 .left {
@@ -260,6 +278,7 @@ p {
   background-color: rgb(245, 224, 224);
   margin: 3rem;
   padding: 3rem;
+  border-radius: 0.3rem;
 }
 .formularioFL .formularioFL__contacto {
   margin: 1.5rem;
@@ -278,8 +297,9 @@ p {
   width: 8rem;
   border-radius: 0.3rem;
   margin: 2rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
-
 .enviar:hover {
   background-color: rgb(200, 5, 234);
 }
