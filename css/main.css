@@ -176,6 +176,9 @@ h5 {
 
 .grid__img {
   width: 23rem;
+  -webkit-box-shadow: 10px 15px 20px rgb(238, 166, 238);
+          box-shadow: 10px 15px 20px rgb(238, 166, 238);
+  border-radius: 0.3rem;
 }
 
 .grid {
@@ -247,6 +250,11 @@ p {
   background-color: rgb(245, 224, 224);
   color: #FF7B9C;
   font-size: 1.5rem;
+  border-radius: 0.3rem;
+}
+.blog img {
+  -webkit-box-shadow: 10px 15px 20px rgb(238, 166, 238);
+          box-shadow: 10px 15px 20px rgb(238, 166, 238);
   border-radius: 0.3rem;
 }
 
