@@ -28,23 +28,30 @@
     border-radius: $border-radius;
     transition: .5s;
 
+
     &:hover {
         transform: scale(1.1);
-    }
-
-    button {
-        background-color: $color-rosa;
-        width: 8rem;
-        border-radius: $border-radius;
-        margin: 2rem;
-        transition: .5s;
-
-        &:hover {
-            background-color: $color-hover;
-        }
 
         img {
             width: 100%;
         }
     }
+}
+
+.producto button {
+    list-style-type: none;
+    background-color: $color-rosa;
+    width: 8rem;
+    border-radius: $border-radius;
+    margin: 2rem;
+    transition: .5s;
+
+    &:hover {
+        background-color: $color-hover;
+    }
+}
+
+.producto a {
+    text-decoration: none;
+    color: black;
 }

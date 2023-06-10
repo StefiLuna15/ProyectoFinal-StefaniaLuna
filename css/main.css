@@ -51,7 +51,8 @@ header .logo img nav {
 .navbarUL li:hover {
   background-color: rgb(200, 5, 234);
 }
-.navbarUL li a {
+
+.navbarUL a {
   text-decoration: none;
   color: aliceblue;
   margin: 0 0.5rem;
@@ -158,7 +159,12 @@ h5 {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
+.producto:hover img {
+  width: 100%;
+}
+
 .producto button {
+  list-style-type: none;
   background-color: #FF7B9C;
   width: 8rem;
   border-radius: 0.3rem;
@@ -169,8 +175,10 @@ h5 {
 .producto button:hover {
   background-color: rgb(200, 5, 234);
 }
-.producto button img {
-  width: 100%;
+
+.producto a {
+  text-decoration: none;
+  color: black;
 }
 
 /*-------FAQ-------*/
@@ -296,6 +304,51 @@ p {
   background-color: rgb(200, 5, 234);
 }
 
+/*-------404-------*/
+.mensaje {
+  background-color: rgb(245, 224, 224);
+  border-radius: 0.3rem;
+  margin: 2rem 8rem;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.7rem;
+}
+
+.mensaje_numeros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 5rem;
+}
+.mensaje_numeros p {
+  font-size: 15rem;
+  margin: 0.5rem;
+  width: 10rem;
+}
+
+.mensaje_numeros .derecho {
+  margin-left: 0.2rem;
+}
+
+.mensaje_numeros .izquierdo {
+  margin-right: 5rem;
+}
+
+.mensaje_numeros img {
+  margin: 1rem;
+}
+
+.mensaje_construccion {
+  padding: 1rem;
+  margin: 1.5rem;
+}
+.mensaje_construccion p {
+  font-size: 1.8rem;
+}
+
 /*-------FOOTER-------*/
 footer {
   background-color: rgb(199, 183, 183);
@@ -419,7 +472,8 @@ h4 {
         -ms-flex-align: center;
             align-items: center;
   }
-  .grid h3, p {
+  .grid h3,
+  p {
     font-size: 1rem;
   }
   .grid {
@@ -471,6 +525,68 @@ h4 {
   }
 }
 /*-------CONTACTO-------*/
+/*Formulario de Bootstrap responsive */
+/*-------404-------*/
+@media screen and (max-width: 1100px) {
+  .mensaje_numeros img {
+    width: 13rem;
+    margin-right: 2rem;
+  }
+  .mensaje_numeros p {
+    font-size: 8rem;
+  }
+  .mensaje_numeros {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .mensaje_numeros .izquierdo {
+    margin-left: 5rem;
+  }
+}
+@media screen and (max-width: 832px) {
+  .mensaje_numeros {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .mensaje_numeros a img {
+    width: 9rem;
+    margin: 2rem 0rem 2rem 2rem;
+  }
+  .mensaje_numeros p {
+    font-size: 6rem;
+    margin-top: 2rem;
+  }
+  .mensaje_numeros .izquierdo {
+    margin-right: 0rem;
+    margin-left: 5rem;
+  }
+  .mensaje_numeros .derecho {
+    margin-right: 2rem;
+  }
+  .mensaje_construccion p {
+    font-size: 1.5rem;
+  }
+  .mensaje_construccion h1 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 585px) {
+  .mensaje_construccion p {
+    font-size: 1.1rem;
+  }
+  .mensaje_construccion h1 {
+    font-size: 1.1rem;
+  }
+  .mensaje_numeros p {
+    display: none;
+  }
+  .mensaje_numeros a img {
+    width: 11rem;
+    margin: 2rem 1rem 2rem 7rem;
+  }
+}
 /*-------HEADER-------*/
 @media screen and (max-width: 830px) {
   header {

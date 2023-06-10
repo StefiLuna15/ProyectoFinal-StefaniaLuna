@@ -1,0 +1,41 @@
+.mensaje {
+    background-color: rgb(245, 224, 224);
+    border-radius: $border-radius;
+    margin: 2rem 8rem;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.mensaje_numeros {
+    display: flex;
+    justify-content: center;
+    margin-right: 5rem;
+
+    p {
+        font-size: 15rem;
+        margin: .5rem;
+        width: 10rem;
+    }
+}
+
+.mensaje_numeros .derecho {
+    margin-left: .2rem;
+}
+
+.mensaje_numeros .izquierdo {
+    margin-right: 5rem;
+}
+
+.mensaje_numeros img {
+    margin: 1rem;
+}
+
+.mensaje_construccion {
+    padding: 1rem;
+    margin: 1.5rem;
+
+    p {
+        font-size: 1.8rem;
+    }
+}

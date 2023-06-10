@@ -29,14 +29,14 @@ header {
         &:hover {
             background-color: $color-hover;
         }
-
-        a {
-            text-decoration: none;
-            color: aliceblue;
-            margin: 0 .5rem;
-            padding: .5rem;
-            font-size: 1.2rem;
-        }
     }
+}
+
+.navbarUL a {
+    text-decoration: none;
+    color: aliceblue;
+    margin: 0 .5rem;
+    padding: .5rem;
+    font-size: 1.2rem;
 }
 
