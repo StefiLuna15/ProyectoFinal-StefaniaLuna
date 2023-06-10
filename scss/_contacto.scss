@@ -1,30 +1,42 @@
-.formularioFL {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(245, 224, 224);
-    margin: 3rem;
-    padding: 3rem;
-    border-radius: $border-radius;
+// .formularioFL {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     background-color: rgb(245, 224, 224);
+//     margin: 3rem;
+//     padding: 3rem;
+//     border-radius: $border-radius;
 
-    .formularioFL__contacto {
-        margin: 1.5rem;
-        width: 25rem;
-        display: flex;
-        flex-direction: column;
-    }
+//     .formularioFL__contacto {
+//         margin: 1.5rem;
+//         width: 25rem;
+//         display: flex;
+//         flex-direction: column;
+//     }
+// }
+
+.formulario {
+    background-color: rgb(245, 224, 224);
+    margin: 3rem 10rem;
+    padding: 4rem;
+    border-radius: $border-radius;
+    font-size: 1.5rem;
 }
 
 
 .enviar {
     background-color: $color-rosa;
-    width: 8rem;
+    width: 7rem;
     border-radius: $border-radius;
-    margin: 2rem;
+    margin-top: 2rem;
+    
+    
+    // margin: 2rem;
+    
+    // margin-left: 36.5rem;
     transition: .5s;
 
     &:hover {
         background-color: $color-hover;
     }
 }
-
