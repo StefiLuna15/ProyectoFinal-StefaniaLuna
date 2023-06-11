@@ -281,9 +281,7 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-/*-------CONTACTO-------*/
+} /*-------CONTACTO-------*/
 .formulario {
   background-color: rgb(245, 224, 224);
   margin: 3rem 10rem;
@@ -525,7 +523,14 @@ h4 {
   }
 }
 /*-------CONTACTO-------*/
-/*Formulario de Bootstrap responsive */
+@media screen and (max-width: 624px) {
+  .formulario {
+    width: 15rem;
+    font-size: 1.3rem;
+    margin: auto;
+    margin-bottom: 3rem;
+  }
+}
 /*-------404-------*/
 @media screen and (max-width: 1100px) {
   .mensaje_numeros img {
@@ -588,7 +593,7 @@ h4 {
   }
 }
 /*-------HEADER-------*/
-@media screen and (max-width: 840px) { /*830*/
+@media screen and (max-width: 840px) {
   header {
     padding: 0.5rem;
   }

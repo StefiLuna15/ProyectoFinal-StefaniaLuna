@@ -147,7 +147,14 @@
 }
 
 /*-------CONTACTO-------*/
-/*Formulario de Bootstrap responsive */
+@media screen and (max-width: 624px) {
+    .formulario {
+        width: 15rem;
+        font-size: 1.3rem;
+        margin: auto;
+        margin-bottom: 3rem;
+    }
+}
 
 /*-------404-------*/
 
