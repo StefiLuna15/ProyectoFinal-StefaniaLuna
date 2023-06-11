@@ -588,7 +588,7 @@ h4 {
   }
 }
 /*-------HEADER-------*/
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 840px) { /*830*/
   header {
     padding: 0.5rem;
   }
